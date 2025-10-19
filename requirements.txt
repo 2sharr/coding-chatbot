@@ -1,0 +1,5 @@
+flask
+openai
+
+
+# TO isntall these packages just write pip install -r ./requirements.txt
