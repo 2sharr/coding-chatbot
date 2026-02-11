@@ -2,30 +2,78 @@
 
 A lightweight chatbot backend project with two server implementations:
 
-- **Flask + OpenAI API** (`app.py`) — handles AI chat responses.  
-- **Express + MongoDB** (`server.js`) — stores chat history and provides simple page routing.
+-   Flask + OpenAI (app.py) --- handles AI chat responses.
+-   Express + MongoDB (server.js) --- stores chat history and serves
+    routes.
 
-> Note: This repository snapshot contains backend/server scaffolding and configuration files. Frontend templates/static assets referenced in code (for example `templates/` and `static/`) are not included.
+------------------------------------------------------------------------
 
-# Tech Stack
+## Tech Stack
 
-- **Python**: Flask, flask-cors, OpenAI Python SDK (`requirements.txt`, `app.py`)  
-- **Node.js**: Express, MongoDB Node driver, Tailwind CSS, Nodemon (`package.json`, `server.js`)  
-- **Database**: MongoDB Atlas (used by `server.js`)
+-   Python: Flask, flask-cors, OpenAI SDK
+-   Node.js: Express, MongoDB driver
+-   Database: MongoDB Atlas
 
-# Prerequisites
+------------------------------------------------------------------------
 
-- Python 3.9+  
-- Node.js 18+ and npm  
-- MongoDB Atlas cluster (or another MongoDB deployment)  
-- OpenAI API key
+## Installation
 
-# Installation
+### Prerequisites
 
-1. Clone the repo and install dependencies:
+-   Python 3.9+
+-   Node.js 18+
+-   MongoDB Atlas
+-   OpenAI API key
 
-```bash
+### Install
+
+``` bash
 git clone <your-repo-url>
-cd coding-chatbot
+cd <repo-folder>
 npm install
 python -m pip install -r requirements.txt
+```
+
+------------------------------------------------------------------------
+
+## Environment Variables
+
+Create a .env file:
+
+    MONGODB_URI=your_mongodb_uri
+    OPENAI_API_KEY=your_openai_key
+    PORT=3001
+
+------------------------------------------------------------------------
+
+## Run
+
+### Flask
+
+``` bash
+python app.py
+```
+
+### Express
+
+``` bash
+npm run dev
+```
+
+------------------------------------------------------------------------
+
+## Project Structure
+
+    app.py
+    server.js
+    package.json
+    requirements.txt
+    README.md
+
+------------------------------------------------------------------------
+
+## Future Improvements
+
+-   Move secrets to environment variables
+-   Add validation and error handling
+-   Add tests and CI/CD
