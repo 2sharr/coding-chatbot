@@ -1,9 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/README.md b/README.md
-index 6fc2301e29c5056b38e194a45359804f5cebc17d..80f202f410d33e4e0d3040cce51f1fff7db5d263 100644
---- a/README.md
-+++ b/README.md
-@@ -1,11 +1,204 @@
 -#Setup of MongoDB
 -
 -1. Go to official website of mongoDB.
@@ -219,6 +213,3 @@ index 6fc2301e29c5056b38e194a45359804f5cebc17d..80f202f410d33e4e0d3040cce51f1fff
 +- Add schema validation for request payloads.
 +- Add unit/integration tests and CI pipeline.
 +- Unify Flask/Express architecture or document when each service should be used.
- 
-EOF
-)
